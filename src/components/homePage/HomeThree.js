@@ -85,7 +85,7 @@ const HomeThree = ({onCursor}) => {
           </h2>
             </FeaturedContent>
             <FeaturedVideo>
-              <video loop autoPlay src={require('../../assets/video/jerm.mp4')}>
+              <video loop autoPlay src='../../assets/video/jerm.mp4'>
 
               </video>
             </FeaturedVideo>

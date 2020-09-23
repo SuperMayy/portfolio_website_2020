@@ -85,7 +85,7 @@ const HomeOne = ({onCursor}) => {
           </h2>
             </FeaturedContent>
             <FeaturedVideo>
-              <video loop autoPlay src={require('../../assets/video/ui.mp4')}>
+              <video loop autoPlay src='../../assets/video/ui.mp4'>
 
               </video>
             </FeaturedVideo>

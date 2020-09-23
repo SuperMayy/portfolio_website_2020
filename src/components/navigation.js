@@ -158,7 +158,7 @@ const Navigation = ({toggleMenu, setToggleMenu, onCursor}) => {
                   <AnimatePresence initial={false} exitBeforeEnter>
                   <motion.video
                   key={revealVideo.key}
-                  src={require(`../assets/video/${revealVideo.video}`)}
+                  src={`../assets/video/${revealVideo.video}`}
                   initial={{opacity: 0}}
                   exit={{opacity: 0}}
                   animate={{opacity: 1}}

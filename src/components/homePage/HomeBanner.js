@@ -97,7 +97,7 @@ const HomeBanner = ({onCursor}) => {
               width='100%'
               loop
               autoPlay
-              src={require('../../assets/video/video(2).mp4')}
+              src='../../assets/video/video(2).mp4'
             />
           </Video>
           <Canvas height={size.height} width={size.width} ref={canvas} 
