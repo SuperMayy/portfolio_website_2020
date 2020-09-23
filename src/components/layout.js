@@ -41,6 +41,8 @@ const GlobalStyle = createGlobalStyle`
 
 
 const Layout = ({ children }) => {
+  const dispatch = useGlobalDispatchContext()
+  const { cursorStyles, currentTheme } = useGlobalStateContext()
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -73,8 +75,6 @@ const [hamburgerPosition, setHamburgerPosition] = useState({
     top: `${hamburgerPosition.y}px`,
   }
 
-  const {currentTheme, cursorStyles} = useGlobalStateContext()
-  const dispatch = useGlobalDispatchContext()
 
 
   const onCursor = cursorType => {
