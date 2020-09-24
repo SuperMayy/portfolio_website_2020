@@ -1,48 +1,49 @@
-import styled from "styled-components";
-import {motion} from 'framer-motion';
+import styled from "styled-components"
+import { motion } from "framer-motion"
 
-//Banner 
+//Banner
 export const Banner = styled.div`
- background: ${props => props.theme.background};
- height: 100vh;
- width: 100%;
- position: relative;
- margin-bottom: 296px;
+  background: ${props => props.theme.background};
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  margin-bottom: 296px;
 `
 
-//Video 
+//Video
 export const Video = styled.div`
- height: 100%;
- width: 100%;
- video {
-     object-fit: cover;
- }
+  height: 100%;
+  width: 100%;
+  video {
+    object-fit: cover;
+  }
 `
 
-//Canvas 
+//Canvas
 export const Canvas = styled.canvas`
- position: absolute;
- top: 0;
- left: 0;
- height: 100%;
- display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
 `
 
 //BannerTitle
 export const BannerTitle = styled(motion.h1)`
- position: absolute;
- bottom: -50px;
- left: -18px;
- color: ${props => props.theme.text};
- pointer-events: none;
+  position: absolute;
+  bottom: -50px;
+  left: -18px;
+  color: ${props => props.theme.text};
+  pointer-events: none;
 `
 //Headline
 export const Headline = styled(motion.span)`
- display: block;
- font-size: 15rem;
- font-weight: 900;
- line-height: .76;
- @media (max-width: 760px) {
+  display: block;
+  font-size: 15rem;
+  font-weight: 900;
+  line-height: 0.76;
+  @media (max-width: 760px) {
     font-size: 10rem;
   }
 `
@@ -62,7 +63,6 @@ export const Content = styled.h2`
   }
 `
 
-  
 //Featured Section
 export const HomeFeaturedSection = styled(motion.div)`
   margin-bottom: 200px;
@@ -116,7 +116,7 @@ export const FeaturedContent = styled(motion.div)`
     }
   }
   @media (max-width: 760px) {
-    .featured-title {  
+    .featured-title {
       font-size: 3.6rem;
     }
   }
@@ -193,7 +193,7 @@ export const About = styled.div`
   }
 `
 export const Services = styled.div`
-color: ${props => props.theme.text};
+  color: ${props => props.theme.text};
 `
 
 //Accordion
