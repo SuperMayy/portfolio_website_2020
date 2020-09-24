@@ -4,8 +4,8 @@ export default function useWindowSize() {
   function getSize() {
     if (typeof window === "undefined") {
       return {
-        width: "100vw",
-        height: "100vh",
+        width: "",
+        height: "",
       }
     } else {
       return {
