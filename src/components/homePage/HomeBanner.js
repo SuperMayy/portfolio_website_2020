@@ -20,19 +20,13 @@ const HomeBanner = ({ onCursor }) => {
 
   const { currentTheme } = useGlobalStateContext()
 
-  const size =
-    typeof window !== "undefined"
-      ? {
-          width: window.innerWidth,
-          height: window.innerHeight,
-        }
-      : {
-          width: 0,
-          height: 0,
-        }
+  const size = typeof window !== "undefined" && {
+    width: window.innerWidth,
+    height: window.innerHeight,
+  }
 
   useEffect(() => {
-    const size = {
+    const windowSize = {
       width: window.innerWidth,
       height: window.innerHeight,
     }
@@ -49,7 +43,7 @@ const HomeBanner = ({ onCursor }) => {
 
     renderingCtx.globalCompositeOperation = "source-over"
     renderingCtx.fillStyle = currentTheme === "dark" ? "#000000" : "#ffffff"
-    renderingCtx.fillRect(0, 0, size.width, size.height)
+    renderingCtx.fillRect(0, 0, windowSize.width, windowSize.height)
 
     renderingElement.addEventListener("mouseover", e => {
       moving = true
