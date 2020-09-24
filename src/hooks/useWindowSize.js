@@ -9,8 +9,8 @@ export default function useWindowSize() {
       }
     } else {
       return {
-        width: "100vw",
-        height: "100vh",
+        width: "100%",
+        height: "100%",
       }
     }
   }
