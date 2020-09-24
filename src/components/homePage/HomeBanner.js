@@ -102,13 +102,16 @@ const HomeBanner = ({ onCursor }) => {
       <Video>
         <video height="100%" width="100%" loop autoPlay src={Vid} />
       </Video>
-      <Canvas
-        height={size.height}
-        width={size.width}
-        ref={canvas}
-        onMouseEnter={() => onCursor("hovered")}
-        onMouseLeave={onCursor}
-      />
+      {typeof window !== "undefined" && (
+        <Canvas
+          height={size.height}
+          width={size.width}
+          ref={canvas}
+          onMouseEnter={() => onCursor("hovered")}
+          onMouseLeave={onCursor}
+        />
+      )}
+
       <BannerTitle variants={parent} initial="initial" animate="animate">
         <Headline variants={child}>I</Headline>
         <Headline variants={child}>CODE</Headline>
