@@ -5,7 +5,7 @@ export default function useWindowSize() {
     if (typeof window === "undefined") {
       return {
         width: "",
-        height: "",
+        height: '100vh',
       }
     } else {
       return {
