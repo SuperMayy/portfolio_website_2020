@@ -5,3 +5,14 @@ https://www.figma.com/proto/Knf6Bf8x4McVLrZLXZHD6O/Ibstock-B2C-(Design)?node-id=
 madhav@blueyesoft.com
 nia@uclpartners.com
 https://www.centricitynetwork.com/networking-information
+portfolio-website
+https://github.com/SuperMayy/portfolio_website_2020
+https://vercel.com/supermayy/portfolio-website
+https://portfolio-website-alpha.vercel.app/
+
+I tried to deploy my site, it said the deployment was successful, yet a 404 page is showing. 
+My site uses Gatsby and React and is static. I removed require functions in the code so it 
+would not clash with me importing things: https://www.gatsbyjs.com/docs/debugging-html-builds/. 
+I also changed the name of a folder from pages to templates, as it was mentioned as a way to fix 
+the issue in stack overflow: https://stackoverflow.com/questions/54402112/gatsby-develop-command-runs-but-gatsby-build-gives-error?rq=1. 
+Also since I made these changes the when I use the gatsby build command to get the local host running, the site comes up with errors and no longer works.
