@@ -2,15 +2,15 @@ import { useState, useEffect } from "react"
 
 export default function useWindowSize() {
   function getSize() {
-    if (typeof window !== "undefined") {
+    if (typeof window === "undefined") {
       return {
-        width: window.innerWidth,
-        height: window.innerHeight,
+        width: 1156,
+        height: 864,
       }
     } else {
       return {
-        width: "100%",
-        height: "100%",
+        width: window.innerWidth,
+        height: window.innerHeight,
       }
     }
   }
