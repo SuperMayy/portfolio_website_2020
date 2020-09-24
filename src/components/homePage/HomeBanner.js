@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 
 import {Banner, Video, BannerTitle, Canvas, Headline} from "../../styles/homeStyles";
+import Vid from '../../assets/video/video(2).mp4';
 
 //context
 import {useGlobalStateContext} from '../../context/globalContext';
@@ -97,7 +98,7 @@ const HomeBanner = ({onCursor}) => {
               width='100%'
               loop
               autoPlay
-              src={require('../../assets/video/video(2).mp4')}
+              src={Vid}
             />
           </Video>
           <Canvas height={size.height} width={size.width} ref={canvas} 
