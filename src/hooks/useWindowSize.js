@@ -4,7 +4,7 @@ export default function useWindowSize() {
   function getSize() {
     if (typeof window === "undefined") {
       return {
-        width: 1156,
+        width: 5156,
         height: 864,
       }
     } else {
