@@ -1,6 +1,11 @@
 import React, {useState} from "react";
 import { Link } from "gatsby";
 import {motion, AnimatePresence} from "framer-motion";
+import Vid0 from '../assets/video/design2tech.mp4';
+import Vid1 from '../assets/video/ui.mp4';
+import Vid2 from '../assets/video/textnspeak.mp4';
+import Vid3 from '../assets/video/jerm.mp4';
+import Vid4 from '../assets/video/video.mp4';
 
 //Styled components
 import {Container, Flex} from "../styles/globalStyles";
@@ -14,29 +19,29 @@ const navRoutes = [
         id: 0, 
         title: 'DESIGN2TECH',
         path:'/#project0', 
-        video: 'design2tech.mp4'
+        video: Vid0
     },
     {
         id: 1, 
         title: 'UI DESIGNS', 
         path:'/#project1', 
-        video: 'ui.mp4'
+        video: Vid1
     },
     {
         id: 2, title: 'TEXT-N-SPEAK', 
         path:'/#project2', 
-        video: 'textnspeak.mp4'
+        video: Vid2
     },
     {
         id: 3, title: 'JERMES', 
         path:'/#project3', 
-        video: 'jerm.mp4'
+        video: Vid3
     },
     {
         id: 4, 
         title: 'ABOUT ME', 
         path:'/#about', 
-        video: 'video.mp4'
+        video: Vid4
     },
 ]
 
@@ -158,7 +163,7 @@ const Navigation = ({toggleMenu, setToggleMenu, onCursor}) => {
                   <AnimatePresence initial={false} exitBeforeEnter>
                   <motion.video
                   key={revealVideo.key}
-                  src={require(`../assets/video/${revealVideo.video}`)}
+                  src={revealVideo.video}
                   initial={{opacity: 0}}
                   exit={{opacity: 0}}
                   animate={{opacity: 1}}

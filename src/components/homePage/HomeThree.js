@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from "gatsby";
 import {motion} from "framer-motion";
+import Vid from '../../assets/video/jerm.mp4';
 
 //Scroll Behavior 
 import {useInView} from "react-intersection-observer";
@@ -85,7 +86,7 @@ const HomeThree = ({onCursor}) => {
           </h2>
             </FeaturedContent>
             <FeaturedVideo>
-              <video loop autoPlay src={require('../../assets/video/jerm.mp4')}>
+              <video loop autoPlay src={Vid}>
 
               </video>
             </FeaturedVideo>
