@@ -4,6 +4,7 @@ import React, { createContext, useReducer, useContext } from "react"
 
 const defaultState = {
   currentTheme: "dark",
+  cursorType: false,
   cursorStyles: ["pointer"],
 }
 
