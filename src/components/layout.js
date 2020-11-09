@@ -13,7 +13,7 @@ import {useGlobalStateContext, useGlobalDispatchContext} from "../context/global
 
 
 //styled components
-import { createGlobalStyle, ThemeProvider } from "styled-components"
+import { createGlobalStyle, ThemeProvider } from "styled-components";
 import { normalize } from "styled-normalize";
 
 const GlobalStyle = createGlobalStyle`
