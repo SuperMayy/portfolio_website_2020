@@ -1,4 +1,4 @@
-# The link to my site is: https://www.may-showumi.com/ . 
+# Old portfolio website 
 
 This project was made using gatsby, react, framer motion, canvas, styled components and deployed via netlify.
 
